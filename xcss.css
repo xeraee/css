@@ -1,0 +1,138 @@
+/* 
+    author              :       xeraee
+    version             :       0.1
+    official website    :       http://www.xeraee.com
+*/
+
+/*
+    define format (sequenced by different css vendor as below)
+    
+    <css-vendor-prefix>
+
+    1.<default><without prefix>
+    2.-webkit-    
+    3.-moz-
+    4.-ms-
+    5.-o-
+    
+    <browser>  <reference > 
+
+    1.google chrome
+    2.internet explorer 
+    3.mozilla firefox
+    4.opera
+    5.safari
+ 
+    reference of css properties
+    http://msdn.microsoft.com/en-us/library/ms531207(v=vs.85).aspx
+    http://help.dottoro.com/lccxfjst.php
+
+*/
+
+
+/* general use*/
+html, body, div, aside, span, applet, object, iframe, input, form,
+h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, 
+a, 
+abbr, acronym, address, big, cite, code, del, dfn, em, font,caption,img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, 
+fieldset, label, legend, 
+table, tbody, tfoot, thead, tr, th, td, 
+article, dialog, figure, footer, header, 
+hgroup, nav, section {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+
+
+
+a:hover{text-decoration:none;outline:none;}
+a:visited{text-decoration:none;outline:none;}
+a:active{text-decoration:none;outline:none;}
+a:link{text-decoration:none; outline:none;}
+
+hr{border-bottom:1px solid gray;}
+
+
+/*  custom css class    */
+.font{font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;}
+
+.stick-TBLR{margin:0;}
+
+.stick-TLR{margin-top:0; margin-left:0;margin-right:0;}
+
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;border:0;}
+ 
+.clearfix {display: inline-block;}
+ 
+html[xmlns] .clearfix {display: block;}
+ 
+* html .clearfix {height: 1%;}
+
+.center-box {display: -moz-box;-moz-box-pack: center;-moz-box-align: center;-moz-box-orient: horizontal;display: -webkit-box;-webkit-box-pack: center;-webkit-box-align: center;-webkit-box-orient: horizontal; vertical-align:middle;}
+
+.global-background{background:url(image.zymagic.com/system/gradient_texture.jpg)  repeat-x scroll 0 0 #EEE;}
+
+.slim-line{border-top:1px solid #DEDEDE; font-size:1px; position:absolute; height:0;}
+
+.rounded-box{border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-top-left-radius: 4px 4px;border-top-right-radius: 4px 4px;border-bottom-right-radius: 4px 4px;border-bottom-left-radius: 4px 4px; border: 1px solid #DEDEDE;}
+
+.radius-border-bottom{-webkit-border-bottom-right-radius: 4px;-webkit-border-bottom-left-radius: 4px;-moz-border-radius-bottomright: 4px;-moz-border-radius-bottomleft: 4px;border-bottom-right-radius: 4px;border-bottom-left-radius: 4px;border: 1px solid #DEDEDE;}
+
+.transition{-o-transition: width 0.3s ease-in-out;-ms-transition: width 0.3s ease-in-out;-moz-transition: width 0.3s ease-in-out;-webkit-transition: width 0.3s ease-in-out;}
+
+.remove-border{border:0px;}
+
+.remove-bullet{list-style: none outside;}
+
+.remove-background-color{background-color:transparent;}
+
+.remove-padding{padding:0px;}
+
+.remove-margin{padding:0px;}
+
+.remove-resize{resize:none;}
+
+.remove-scrollbar-xy{overflow-x:none;overflow-y:none;}
+
+.remove-outline{outline:white solid 0px;}
+
+.center{margin-left:auto;margin-right:auto;}
+
+.add-shadow {background: #1c1c1c;color: #0099ff;display: block;margin: 3px;text-align: center;width: auto;-moz-box-shadow: 0px 0px 15px #0099ff;-webkit-box-shadow: 0px 0px 15px #0099ff;box-shadow: 0px 0px 15px #0099ff;}
+
+.transparent-background {background-color:black;opacity:0.4;filter:alpha(opacity=40);}
+
+
+
+
+/*      global      */
+
+
+/*  component   */
+
+.youtube-button {font:normal 13px arial,helvetica,sans-serif;color:#000;border:1px solid #ccc;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;background-color:#f6f6f6;height: 1.9231em;padding: 0 0.5em;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: visible;
+    outline: 0 none /* removes focus outline in IE */;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#efefef));
+}
+.youtube-button::-moz-focus-inner {border:none} /* removes focus outline in FF */
+.youtube-button:hover, button:focus {border-color:#999;background-color:#f0f1f3;box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ebebeb));
+}
+.youtube-button:active {background-color:#ddd;background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
+}
+
